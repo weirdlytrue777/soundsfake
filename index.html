@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sounds Fake Studio - publish your original shorts to TikTok</title>
+<meta name="description" content="Sounds Fake Studio - a desktop tool for publishing your own original short videos to TikTok.">
+<style>
+:root{--ink:#22083f;--muted:#5b4a72;--line:#ece6f5;--bg:#faf8fd;--accent:#9333ea;--pink:#ec4899}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+header.hero{background:linear-gradient(135deg,#581cc8 0%,#9333ea 45%,#ec4899 80%,#f43f5e 100%);color:#fff;padding:0 20px 48px}
+nav{max-width:920px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+nav .brand{font-weight:800;font-size:20px;letter-spacing:.2px;color:#fff;text-decoration:none}
+nav .links a{color:#fff;text-decoration:none;font-weight:600;margin-left:18px;opacity:.95}
+nav .links a:hover{text-decoration:underline}
+.hero-inner{max-width:920px;margin:0 auto;padding-top:28px}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px}
+.hero p.lead{font-size:18px;max-width:640px;margin:0;opacity:.95}
+main{max-width:920px;margin:-24px auto 0;padding:0 20px 40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 32px;margin-bottom:20px;box-shadow:0 6px 24px rgba(88,28,200,.06)}
+h2{font-size:22px;margin:28px 0 8px}h2:first-child{margin-top:0}h3{font-size:17px;margin:20px 0 6px}
+p,li{color:#2e1b47}a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.feature{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+.feature b{display:block;margin-bottom:4px}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding-left:44px;margin:12px 0}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#9333ea,#ec4899);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.meta{color:var(--muted);font-size:14px}
+.placeholder{background:#fff3c4;border:1px dashed #d4a300;padding:0 4px;border-radius:4px;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f6f1fc}
+footer{border-top:1px solid var(--line);background:#fff;padding:24px 20px;text-align:center;font-size:14px;color:var(--muted)}
+footer a{margin:0 10px;font-weight:600}
+</style>
+</head>
+<body>
+<header class="hero">
+  <nav>
+    <a class="brand" href="index.html">Sounds Fake Studio</a>
+    <div class="links"><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div>
+  </nav>
+  <div class="hero-inner">
+    <h1>Sounds Fake Studio</h1>
+    <p class="lead">A simple desktop tool for creators to publish their own original short videos to TikTok - with full control over the caption, who can watch, interactions and disclosures before anything is posted.</p>
+  </div>
+</header>
+<main>
+<section class="card">
+  <h2>What it does</h2>
+  <p>Sounds Fake Studio is a small desktop application made by Sounds Fake, the team behind the <em>Sounds Fake</em> weird-but-true
+  fact shorts (<a href="https://www.youtube.com/@soundsfake77">YouTube @soundsfake77</a>, TikTok @soundsfake77).
+  It runs on the creator's own computer, lets the creator sign in with their TikTok account using TikTok Login Kit,
+  and publishes a short video file from their computer to their TikTok profile using TikTok's official Content Posting API.</p>
+  <p>Nothing is ever posted automatically: every post is reviewed and confirmed by the creator on the posting screen.</p>
+</section>
+
+<section class="card">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="feature"><b>Sign in with TikTok</b>Secure authorization through TikTok Login Kit (OAuth 2.0 with PKCE). We never see your TikTok password.</div>
+    <div class="feature"><b>Know where you post</b>The posting screen always shows the nickname and avatar of the TikTok account the video will go to.</div>
+    <div class="feature"><b>Preview first</b>Watch the exact video file before posting and edit the caption, hashtags and mentions.</div>
+    <div class="feature"><b>You choose who can watch</b>Pick the privacy level yourself from the options TikTok allows for your account. There is no default.</div>
+    <div class="feature"><b>Interaction controls</b>Turn comments, Duet and Stitch on or off for each post. All are off until you turn them on.</div>
+    <div class="feature"><b>Honest disclosures</b>Built-in commercial content disclosure ("Your brand" / "Branded content") and optional AI-generated content label.</div>
+    <div class="feature"><b>Or finish in TikTok</b>Prefer TikTok's own editor? Send the video to your TikTok inbox as a draft and complete the post in the TikTok app.</div>
+    <div class="feature"><b>Live status</b>See upload and processing status until TikTok confirms the post is published.</div>
+    <div class="feature"><b>Private by design</b>Runs locally. Your videos and sign-in tokens stay on your device; no ads, no tracking, no data sales.</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Open Sounds Fake Studio</b> on your computer and click <em>Continue with TikTok</em>.</li>
+    <li><b>Authorize</b> on TikTok's own page. Sounds Fake Studio asks only for your basic profile (to show who is signed in) and permission to upload and publish videos you choose.</li>
+    <li><b>Choose a video</b> from your computer. It is previewed and checked against the maximum length TikTok allows for your account.</li>
+    <li><b>Set the details</b>: caption, who can view, comments / Duet / Stitch, and any commercial content disclosure.</li>
+    <li><b>Confirm and post.</b> Only after you click <em>Post</em> is the video sent to TikTok. Processing can take a few minutes before it appears on your profile; the app shows the status.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>TikTok permissions used</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td><code>user.info.basic</code></td><td>Show the signed-in account's display name and avatar so you know which account you are using.</td></tr>
+    <tr><td><code>video.publish</code></td><td>Publish the video you selected, with the settings you chose, directly to your TikTok profile.</td></tr>
+    <tr><td><code>video.upload</code></td><td>Optional: send the selected video to your TikTok inbox as a draft, so you can finish editing and post it inside the TikTok app.</td></tr>
+  </table>
+  <p class="meta">You can disconnect at any time inside the app or in the TikTok app under Settings and privacy &rarr; Security &rarr; Apps and services.</p>
+</section>
+
+<section class="card">
+  <h2>Content rules</h2>
+  <p>Sounds Fake Studio is for publishing <b>original content you own or have the rights to</b>. It does not copy, download or re-post content
+  from other platforms or other creators, and it does not add watermarks, logos or promotional text to your videos.
+  Please follow the <a href="https://www.tiktok.com/community-guidelines">TikTok Community Guidelines</a>.</p>
+  <p>Read our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>. Questions: <a href="mailto:weirdlytrue77@gmail.com">weirdlytrue77@gmail.com</a></p>
+</section>
+
+</main>
+<footer>
+  <div><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div>
+  <p>&copy; 2026 Sounds Fake &middot; Operated by ChiaChing Haung, Taiwan &middot; Contact: <a href="mailto:weirdlytrue77@gmail.com">weirdlytrue77@gmail.com</a></p>
+  <p>Sounds Fake Studio is an independent tool and is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance.</p>
+</footer>
+</body>
+</html>
